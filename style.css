@@ -62,11 +62,11 @@ section.wrap { padding-block: 4.5rem; }
 .js .reveal.in { opacity: 1; transform: none; }
 
 /* timeline accents */
-.timeline { position: relative; border-top: 1px solid var(--line); }
+.timeline { position: relative; }
 .timeline::before { content: ""; position: absolute; top: 0; bottom: 0; left: calc(11rem + 1.5rem); width: 2px; background: var(--line); }
 .timeline > li { position: relative; }
 .timeline > li .what { position: relative; padding-left: 1.75rem; }
-.timeline > li .what::before { content: ""; position: absolute; left: -5px; top: .55rem; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); transition: background .25s, transform .25s; }
+.timeline > li .what::before { content: ""; box-sizing: border-box; position: absolute; left: -5px; top: .55rem; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); transition: background .25s, transform .25s; }
 .timeline > li:hover .what::before, .timeline > li:first-child .what::before { background: var(--accent); }
 .timeline > li:hover .what::before { transform: scale(1.25); }
 .grid4 div { transition: transform .2s, border-color .2s; }

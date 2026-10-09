@@ -26,7 +26,7 @@ links.addEventListener('click', e => {
 });
 
 /* reveal on scroll, staggered inside each group */
-const groups = '.timeline > li, .projects > .card, .skills > div, .stats > div, .two > p, h2, .contact .lead, .contact .cta, .grid4 > div';
+const groups = '.timeline > li, .projects > .card, .skills > div, .stack-groups > .sg, .stats > div, .two > p, h2, .contact .lead, .contact .cta, .grid4 > div';
 document.querySelectorAll(groups).forEach(el => {
   el.classList.add('reveal');
   const sibs = [...el.parentElement.children].filter(c => c.classList.contains('reveal') || c === el);

@@ -137,6 +137,22 @@ h3 { margin: 0; }
 .shots.phones { grid-template-columns: repeat(3, 1fr); }
 .shots.phones img { border-radius: 14px; }
 
+/* tech logos */
+.tech { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.tech li { display: inline-flex; align-items: center; gap: .5rem; padding: .4rem .8rem .4rem .55rem; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; font-size: .85rem; font-weight: 500; transition: transform .2s, border-color .2s; }
+.tech li:hover { transform: translateY(-2px); border-color: var(--accent); }
+.tech img { width: 1.35rem; height: 1.35rem; flex: none; }
+.tech small { color: var(--muted); font-size: .72rem; font-weight: 400; margin-left: .15rem; }
+.tech.mini { gap: .4rem; }
+.tech.mini li { padding: .25rem .6rem .25rem .45rem; font-size: .78rem; border-radius: 8px; background: var(--surface); }
+.tech.mini img { width: 1.1rem; height: 1.1rem; }
+:root[data-theme="dark"] .mono { filter: invert(1); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .mono { filter: invert(1); } }
+.stack-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1rem; }
+.sg { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem; display: flex; flex-direction: column; gap: .9rem; }
+.sg h3 { font-size: 1rem; }
+.sg .note { margin: 0; color: var(--muted); font-size: .82rem; }
+
 /* skills */
 .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
 .skills div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1.2rem; }

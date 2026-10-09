@@ -15,6 +15,7 @@
 </head>
 <body>
 
+<div class="progress" id="progress"></div>
 <header class="nav">
   <div class="wrap nav-inner">
     <a href="#top" class="logo">MRF<span>.</span></a>
@@ -26,13 +27,19 @@
       <a href="#contact">Contact</a>
     </nav>
     <button class="theme" id="theme" aria-label="Toggle dark mode">◐</button>
+    <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
 </header>
 
 <main id="top">
 
   <section class="hero wrap">
-    <img class="portrait" src="assets/profile.jpg" alt="Portrait of Muhammad Rizki Firmansyah" width="360" height="450">
+    <div class="avatar" id="avatar">
+      <img src="assets/profile.webp" alt="Portrait of Muhammad Rizki Firmansyah" width="680" height="800">
+      <span class="badge b1">Java</span>
+      <span class="badge b2">Spring Boot</span>
+      <span class="badge b3">Angular</span>
+    </div>
     <div class="hero-text">
     <p class="eyebrow">Product Engineer &amp; Backend Developer</p>
     <h1>Muhammad Rizki<br><span class="accent">Firmansyah</span></h1>
@@ -44,8 +51,8 @@
     </div>
     </div>
     <dl class="stats">
-      <div><dt>1.5+</dt><dd>years in fintech and enterprise backend</dd></div>
-      <div><dt>5</dt><dd>featured projects</dd></div>
+      <div><dt data-to="1.5" data-dec="1" data-suffix="+">1.5+</dt><dd>years in fintech and enterprise backend</dd></div>
+      <div><dt data-to="5">5</dt><dd>featured projects</dd></div>
       <div><dt>Java 25</dt><dd>latest migration target</dd></div>
       <div><dt>Angular 20</dt><dd>latest frontend upgrade</dd></div>
     </dl>
@@ -82,10 +89,12 @@
         <div class="what">
           <h3>Back End Developer</h3>
           <p class="org">Berijalan (member of Astra) · Yogyakarta</p>
-          <ul>
-            <li>Developed backend features and API endpoints for an omnichannel messaging platform and a chatbot service.</li>
-            <li>Improved existing APIs to meet business needs and fixed issues across development, staging and production.</li>
-          </ul>
+          <p class="blurb">Backend work on enterprise systems, collaborating with other developers to release changes.</p>
+          <div class="chips"><span>REST APIs</span><span>Omnichannel messaging</span><span>Chatbot</span></div>
+          <div class="grid4">
+            <div><h4>New features</h4><p>Built backend features and API endpoints for an omnichannel messaging platform and a chatbot service.</p></div>
+            <div><h4>API improvements</h4><p>Improved existing APIs to meet business needs and fixed issues across development, staging and production.</p></div>
+          </div>
         </div>
       </li>
       <li>
@@ -93,7 +102,8 @@
         <div class="what">
           <h3>Software Engineer</h3>
           <p class="org">Widya Robotics · Sleman, Yogyakarta</p>
-          <ul><li>Engineered software solutions and integrated backend services for AI and robotics products.</li></ul>
+          <p class="blurb">Engineered software solutions and integrated backend services for AI and robotics products.</p>
+          <div class="chips"><span>Backend integration</span><span>AI &amp; Robotics</span></div>
         </div>
       </li>
       <li>
@@ -101,7 +111,8 @@
         <div class="what">
           <h3>Laboratory Teaching Assistant</h3>
           <p class="org">UPN "Veteran" Yogyakarta</p>
-          <ul><li>Guided undergraduate students through software engineering, algorithms and practical programming labs.</li></ul>
+          <p class="blurb">Guided undergraduate students through practicum coursework and hands-on programming labs.</p>
+          <div class="chips"><span>Software engineering</span><span>Algorithms</span><span>Programming labs</span></div>
         </div>
       </li>
     </ol>

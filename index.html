@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Rizki Firmansyah | Product Engineer & Backend Developer</title>
+  <meta name="description" content="Portfolio of Muhammad Rizki Firmansyah, a product engineer and backend developer building payment and partner-commerce services with Java, Spring Boot and Angular.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">MRF<span>.</span></a>
+    <nav class="links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme" id="theme" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="eyebrow">Product Engineer &amp; Backend Developer</p>
+    <h1>Muhammad Rizki<br><span class="accent">Firmansyah</span></h1>
+    <p class="lead">I build payment and partner-commerce services with Java, Spring Boot and Angular at AstraPay. Biller integrations, reconciliation and settlement, and large-scale Java 11 to 25 modernization are my day-to-day.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="CV_Muhammad_Rizki_Firmansyah_ATS.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn" href="mailto:rizkifirmansyah2642@gmail.com">Get in touch</a>
+    </div>
+    <dl class="stats">
+      <div><dt>1.5+</dt><dd>years in fintech and enterprise backend</dd></div>
+      <div><dt>5</dt><dd>featured projects</dd></div>
+      <div><dt>Java 25</dt><dd>latest migration target</dd></div>
+      <div><dt>Angular 20</dt><dd>latest frontend upgrade</dd></div>
+    </dl>
+  </section>
+
+  <section id="about" class="wrap">
+    <h2><span>01</span> About</h2>
+    <div class="two">
+      <p>I'm a Bachelor of Informatics graduate from UPN "Veteran" Yogyakarta, now working across South Jakarta and Yogyakarta. My work sits where backend reliability meets product delivery: coordinating with external technical partners, mapping messy upstream errors into clean contracts, and keeping money movement accurate.</p>
+      <p>Outside of work I explore agentic development, shipping real apps with AI agents as collaborators, and I enjoy leading small teams, from a Bangkit cloud capstone to an inventory app used by PLN field staff.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="wrap">
+    <h2><span>02</span> Experience</h2>
+    <ol class="timeline">
+      <li>
+        <div class="when">Apr 2025 – Present</div>
+        <div class="what">
+          <h3>Product Engineer</h3>
+          <p class="org">PT Astra Digital Arta (AstraPay) · South Jakarta</p>
+          <ul>
+            <li>Built Spring Boot backend services and Angular web apps for partner commerce in the AstraPay ecosystem, coordinating with external partners and internal teams on API integration and availability.</li>
+            <li>Built Biller Open API flows: status sync, callback-independent payment status, standardized error mapping, and reconciliation, settlement and refund processing.</li>
+            <li>Shipped fee and pricing management (partner charge, convenience fee, final-price listing) and end-to-end Sharia merchant support, from onboarding to zakat, infaq and wakaf products.</li>
+            <li>Led the Mitra service migration from Java 11 to 25 (Spring Boot 2.7.18, MapStruct, MockitoBean) and upgraded admin and dashboard apps to Angular 20.</li>
+            <li>Delivered partner dashboard features, optimized inquiry queries, and built Data Studio dashboards for partner performance.</li>
+            <li>Wrote architecture spikes for biller product sync and fee management; now hardening security with public/private endpoint separation and service-to-service authorization.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jan 2025 – Feb 2025</div>
+        <div class="what">
+          <h3>Back End Developer</h3>
+          <p class="org">Berijalan (member of Astra) · Yogyakarta</p>
+          <ul>
+            <li>Developed backend features and API endpoints for an omnichannel messaging platform and a chatbot service.</li>
+            <li>Improved existing APIs to meet business needs and fixed issues across development, staging and production.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Feb 2024 – Jun 2024</div>
+        <div class="what">
+          <h3>Software Engineer</h3>
+          <p class="org">Widya Robotics · Sleman, Yogyakarta</p>
+          <ul><li>Engineered software solutions and integrated backend services for AI and robotics products.</li></ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jul 2022 – Feb 2024</div>
+        <div class="what">
+          <h3>Laboratory Teaching Assistant</h3>
+          <p class="org">UPN "Veteran" Yogyakarta</p>
+          <ul><li>Guided undergraduate students through software engineering, algorithms and practical programming labs.</li></ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" class="wrap">
+    <h2><span>03</span> Projects</h2>
+    <div class="projects">
+
+      <article class="card" style="--c:#8b6fe0; --bg:#f1ecff">
+        <div class="shots two-up">
+          <img src="assets/catatuang-dashboard.jpg" alt="CatatUang dashboard with balance summary and expense chart" loading="lazy">
+          <img src="assets/catatuang-wallets.jpg" alt="CatatUang wallets page" loading="lazy">
+        </div>
+        <p class="tag">Agentic development · 2025</p>
+        <h3>CatatUang</h3>
+        <p class="sub">Multi-wallet personal finance PWA, built entirely with AI agents.</p>
+        <p>Started as a server-rendered Laravel app, converted to a Vue 3 SPA with a Sanctum API in five phases, then turned into a deploy-ready PWA. Features include recurring transactions via the scheduler and graduated push alerts (20%, 10%, 0%) through a queue. Backed by PHPUnit tests, wallet isolation checks, and Docker deploys on Railway and Render.</p>
+        <ul class="nums"><li><b>85</b> commits</li><li><b>30+</b> API endpoints</li><li><b>9</b> features</li></ul>
+        <p class="stack">Laravel 13 · Vue 3 · Pinia · Tailwind · PostgreSQL · Docker</p>
+        <p class="role">Role: product owner and AI agent director</p>
+        <a href="https://github.com/Kokonumbawan23/catatuang" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card" style="--c:#2f9e5b; --bg:#e6f5eb">
+        <div class="shots">
+          <img src="assets/koma-screens.jpg" alt="KoMa app screens: login, home, camera and recipe recommendations" loading="lazy">
+        </div>
+        <p class="tag">Bangkit Academy 2023</p>
+        <h3>KoMa (Konco Mangan)</h3>
+        <p class="sub">Android app that recognizes ingredients from photos and recommends healthy recipes.</p>
+        <p>Capstone C23-PS252 with a six-person Android, ML and Cloud team. I owned the backend and deployment: a Node.js and Express API on Cloud Run, Sequelize migrations and recipe seeding, OTP password reset, and a Cloud Build CI/CD pipeline (install, build image, push, deploy).</p>
+        <ul class="nums"><li><b>97%</b> validation accuracy</li><li><b>36</b> ingredient classes</li><li><b>13</b> endpoints</li></ul>
+        <p class="stack">Node.js · Express · Sequelize · Cloud Run · Cloud SQL · Cloud Storage</p>
+        <p class="role">Role: Cloud Engineer (backend and deployment)</p>
+        <a href="https://github.com/Kokonumbawan23/KoMa" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card" style="--c:#4a63d8; --bg:#e8edfd">
+        <div class="shots two-up">
+          <img src="assets/uola-main.jpg" alt="Uola Pandawa Sejahtera main website" loading="lazy">
+          <img src="assets/uola-marketing.jpg" alt="Uola Pandawa Sejahtera marketing website" loading="lazy">
+        </div>
+        <p class="tag">Web design</p>
+        <h3>Uola Pandawa Sejahtera</h3>
+        <p class="sub">Main and marketing websites for a lift contractor, built with WordPress.</p>
+        <p>Designed the layout and structure for two public websites: hero with dual calls to action, full navigation, product catalog, projects, and a floating WhatsApp button. Conveys a safe, professional impression with a consistent blue and navy identity, and was deployed on the main domain and a marketing subdomain.</p>
+        <ul class="nums"><li><b>2</b> websites</li><li><b>WP</b> WordPress</li></ul>
+        <p class="stack">WordPress · Web design · Domain deployment</p>
+        <p class="role">Role: web designer</p>
+        <a href="https://www.uolapandawasejahtera.com" target="_blank" rel="noopener">Visit main site →</a>
+      </article>
+
+      <article class="card" style="--c:#e0554f; --bg:#fde9e7">
+        <p class="tag">Mini project</p>
+        <h3>Mini App Pokemon</h3>
+        <p class="sub">Pokemon card catalog and shop built with Angular, from login to checkout.</p>
+        <p>A practice project for clean Angular architecture: lazy-loaded modules, NgRx cart state restored from sessionStorage, dual route guards (auth and unsaved-form), reactive forms with a FormArray, Firebase Auth and order CRUD in Realtime DB. SSR-ready with Express.</p>
+        <ul class="nums"><li><b>160</b> Pokemon</li><li><b>17</b> type filters</li><li><b>19</b> Angular</li></ul>
+        <p class="stack">Angular 19 · TypeScript · NgRx · Tailwind · Firebase · PokeAPI</p>
+        <p class="role">Role: developer</p>
+        <a href="https://github.com/Kokonumbawan23/mini-project-pokemon" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card" style="--c:#d9910f; --bg:#fff4d9">
+        <div class="shots phones">
+          <img src="assets/ultg-login.jpg" alt="ULTG Inventory login screen" loading="lazy">
+          <img src="assets/ultg-list.jpg" alt="ULTG Inventory item list with status filters" loading="lazy">
+          <img src="assets/ultg-detail.jpg" alt="ULTG Inventory item detail with QR code download" loading="lazy">
+        </div>
+        <p class="tag">Case study</p>
+        <h3>ULTG Inventory</h3>
+        <p class="sub">Mobile inventory management app for PLN ULTG Yogyakarta.</p>
+        <p>Field equipment like solar panels and jumper cables constantly moves and gets borrowed. The app gives every item a unique code and QR, a clear status (Available, Borrowed, Damaged), and location and calibration history. Borrowed items are protected from deletion; QR codes download as PDF and are scanned in-app.</p>
+        <ul class="nums"><li><b>3</b> months</li><li><b>3</b> person team</li></ul>
+        <p class="stack">Flutter · Express.js · QR codes</p>
+        <p class="role">Role: project lead and developer</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="wrap">
+    <h2><span>04</span> Skills</h2>
+    <div class="skills">
+      <div><h3>Backend</h3><p>Java (up to 25) · Spring Boot · Node.js · PHP (Laravel) · REST APIs</p></div>
+      <div><h3>Frontend &amp; Mobile</h3><p>Angular (up to 20) · Flutter · HTML/CSS · Vue 3</p></div>
+      <div><h3>Databases &amp; Data</h3><p>PostgreSQL · MongoDB · Data Studio dashboards</p></div>
+      <div><h3>Infrastructure &amp; Tools</h3><p>Server Side Web Infra · nginx · deployment YAML · Docker · Google Cloud · Git</p></div>
+    </div>
+
+    <h2 class="sub-h"><span>05</span> Education &amp; Certifications</h2>
+    <div class="skills">
+      <div><h3>Bachelor of Informatics</h3><p>UPN "Veteran" Yogyakarta · 2020 – 2024</p></div>
+      <div><h3>Cloud Computing, Full Graduate</h3><p>Bangkit Academy · Cohort Feb – Jul 2023</p></div>
+      <div><h3>Junior Web Developer</h3><p>BNSP · Professional certification</p></div>
+      <div><h3>Leadership</h3><p>IT Club UPN (Back End, 2022–2023) · BEM FTI UPN (Human Resources, 2021–2023)</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap contact">
+    <h2><span>06</span> Contact</h2>
+    <p class="lead">Open to conversations about backend, payments and product engineering. The fastest way to reach me is email.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:rizkifirmansyah2642@gmail.com">rizkifirmansyah2642@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/mrizkifirmansyah" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Kokonumbawan23" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year">2026</span> Muhammad Rizki Firmansyah</span>
+  <span>Greater Yogyakarta / South Jakarta, Indonesia</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -81,6 +81,9 @@ section.wrap { padding-block: 4.5rem; }
 h1 { font-size: clamp(2.4rem, 7vw, 4.5rem); line-height: 1.08; margin: 0 0 1.5rem; letter-spacing: -.02em; }
 .accent { color: var(--accent); }
 .lead { font-size: 1.1rem; color: var(--muted); max-width: 40rem; margin: 0 0 2rem; }
+.hero .lead { margin-bottom: 1rem; }
+.hero .sub-lead { font-size: .98rem; margin-bottom: 2rem; }
+.hero .lead:not(.sub-lead) { color: var(--text); }
 .cta { display: flex; flex-wrap: wrap; gap: .75rem; }
 .btn { display: inline-block; padding: .7rem 1.3rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; font-weight: 500; font-size: .92rem; transition: transform .15s, border-color .15s; }
 .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
